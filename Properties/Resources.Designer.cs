@@ -233,6 +233,16 @@ namespace Restaurant_Management.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap indir__1__removebg_preview__2_ {
+            get {
+                object obj = ResourceManager.GetObject("indir__1_-removebg-preview (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap indir__2__removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("indir__2_-removebg-preview", resourceCulture);

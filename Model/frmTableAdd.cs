@@ -8,36 +8,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Guna.UI2.WinForms;
 
 namespace Restaurant_Management.Model
 {
-    public partial class frmCategoryAdd : Form
+    public partial class frmTableAdd : Form
     {
-        public frmCategoryAdd()
+        public frmTableAdd()
         {
             InitializeComponent();
         }
 
         public int id = 0;
-        private void btnSave_Click(object sender, EventArgs e)
+
+        private void btnSave_Click_1(object sender, EventArgs e)
         {
             string qry = "";
 
-            if(id == 0)
+            if (id == 0)
             {
-                qry = "Insert into category Values(@Name)";
+                qry = "Insert into tables Values(@Name)";
             }
             else
             {
-                qry = "Update category Set catName = @Name where catID = @id";
+                qry = "Update tables Set tname = @Name where tid = @id";
             }
 
             Hashtable ht = new Hashtable();
             ht.Add("@id", id);
-            ht.Add("@Name",txtName.Text);
+            ht.Add("@Name", txtName.Text);
 
-            if (MainClass.SQl(qry,ht) > 0)
+            if (MainClass.SQl(qry, ht) > 0)
             {
                 MessageBox.Show("Saved successfully..");
                 //Guna2MessageDialog.Show("Saved successfully..");
@@ -47,7 +47,7 @@ namespace Restaurant_Management.Model
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

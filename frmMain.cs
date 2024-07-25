@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Restaurant_Management.Model;
 using Restaurant_Management.View;
 
 namespace Restaurant_Management
@@ -17,8 +18,14 @@ namespace Restaurant_Management
         {
             InitializeComponent();
         }
+
+        static frmMain _obj;
+
+        public static frmMain Instance
+        {
+            get { if( _obj == null ) { _obj = new frmMain(); } return _obj; }
+        }
         
-        //normalde staticti ama CenterPanel degişkenine ulasılmadıgından static i kaldırdım
         public void AddControls(Form f)
         {
             CenterPanel.Controls.Clear();
@@ -37,6 +44,7 @@ namespace Restaurant_Management
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblUser.Text = MainClass.USER;
+            _obj = this;
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -46,32 +54,32 @@ namespace Restaurant_Management
 
         private void btnPOS_Click(object sender, EventArgs e)
         {
-            AddControls(new frmPOS());
+            AddControls(new frmPOSView());
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            AddControls(new frmSetting());
+            
         }
 
         private void btnKitchen_Click(object sender, EventArgs e)
         {
-            AddControls(new frmKitchen());
+            
         }
 
         private void btnStaff_Click(object sender, EventArgs e)
         {
-            AddControls(new frmStaff());
+            AddControls(new frmStaffView());
         }
 
         private void btnTable_Click(object sender, EventArgs e)
         {
-            AddControls(new frmTable());
+            AddControls(new frmTableView());
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
-            AddControls(new frmProduct());
+            AddControls(new frmProductView());
         }
 
         private void btnCategory_Click(object sender, EventArgs e)

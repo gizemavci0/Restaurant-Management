@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Restaurant_Management
+namespace Restaurant_Management.Model
 {
-    public partial class frmSetting : Form
+    public partial class frmPOSAdd : Form
     {
-        public frmSetting()
+        public frmPOSAdd()
         {
             InitializeComponent();
         }
