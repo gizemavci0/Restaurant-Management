@@ -35,7 +35,6 @@ namespace Restaurant_Management
             f.Show();
         }
 
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -54,7 +53,8 @@ namespace Restaurant_Management
 
         private void btnPOS_Click(object sender, EventArgs e)
         {
-            AddControls(new frmPOSView());
+            frmPOS frm = new frmPOS();
+            frm.Show();
         }
 
         private void btnSettings_Click(object sender, EventArgs e)

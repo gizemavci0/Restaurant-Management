@@ -73,6 +73,37 @@ namespace Restaurant_Management.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap delivery_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("delivery-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_249433286_stock_illustration_outline_drawing_a_man_with_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_249433286-stock-illustration-outline-drawing-a-man-with-removebg-pr" +
+                        "eview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap edited_exit_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("edited_exit-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap free_settings_icon_778_thumb_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("free-settings-icon-778-thumb-removebg-preview", resourceCulture);
@@ -136,6 +167,16 @@ namespace Restaurant_Management.Properties {
         internal static System.Drawing.Bitmap images__2__removebg_preview__1_ {
             get {
                 object obj = ResourceManager.GetObject("images__2_-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__2__removebg_preview__2_ {
+            get {
+                object obj = ResourceManager.GetObject("images__2_-removebg-preview (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,6 +334,26 @@ namespace Restaurant_Management.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap indir_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("indir-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap list_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("list-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap Menu_Clipart_Hd_PNG__Menu_Vector_Icon__Menu_Icons__List__Line_PNG_Image_For_Free_Download_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Menu_Clipart_Hd_PNG__Menu_Vector_Icon__Menu_Icons__List__Line_PNG_Image_For_Free_" +
@@ -317,6 +378,16 @@ namespace Restaurant_Management.Properties {
         internal static System.Drawing.Bitmap recycling_bin_icon_psd_45713_removebg_preview1 {
             get {
                 object obj = ResourceManager.GetObject("recycling-bin-icon-psd-45713-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap take_away_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("take_away-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
