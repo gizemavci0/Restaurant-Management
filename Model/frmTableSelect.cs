@@ -38,6 +38,7 @@ namespace Restaurant_Management.Model
                 b.HoverState.FillColor = Color.FromArgb(50,55,89);
 
                 b.Click += new EventHandler(b_Click);
+                //Masa bilgileri panele eklendi
                 flowLayoutPanel1.Controls.Add(b);
             }
         }
