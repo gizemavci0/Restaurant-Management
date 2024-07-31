@@ -104,6 +104,16 @@ namespace Restaurant_Management.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap edited_List_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("edited_List-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap free_settings_icon_778_thumb_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("free-settings-icon-778-thumb-removebg-preview", resourceCulture);

@@ -30,8 +30,8 @@ namespace Restaurant_Management.View
             flowLayoutPanel1.Controls.Clear();
             string qry1 = @"Select * from tblMain where status = 'Pending' ";
             SqlCommand cmd1 = new SqlCommand(qry1, MainClass.con);
-            SqlDataAdapter da = new SqlDataAdapter(cmd1);
             DataTable dt1 = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd1);
             da.Fill(dt1);
 
             FlowLayoutPanel p1;
@@ -49,7 +49,7 @@ namespace Restaurant_Management.View
                 p1.Margin = new Padding(10, 10, 10, 10);
 
                 FlowLayoutPanel p2 = new FlowLayoutPanel();
-                //p2 = new FlowLayoutPanel();
+                p2 = new FlowLayoutPanel();
                 p2.BackColor = Color.FromArgb(50, 55, 89);
                 p2.AutoSize = true;
                 p2.Width = 230;
@@ -100,18 +100,20 @@ namespace Restaurant_Management.View
                                 Where m.MainID = " + mid + "";
 
                 SqlCommand cmd2 = new SqlCommand(qry2, MainClass.con);
-                SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
                 DataTable dt2 = new DataTable();
+                SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
+                da2.Fill(dt2);
 
-                for(int j = 0; j< dt2.Rows.Count; j++)
+
+                for (int j = 0; j< dt2.Rows.Count; j++)
                 {
                     Label lb5 = new Label();
-                    lb5.ForeColor = Color.White;
+                    lb5.ForeColor = Color.Black;
                     lb5.Margin = new Padding(10, 5, 3, 0);
                     lb5.AutoSize = true;
 
                     int no = j + 1;
-                    lb5.Text = "" + no + "" + dt2.Rows[j]["pName"].ToString() + " " + dt2.Rows[j]["qty"].ToString();
+                    lb5.Text = "" + no + ". " + dt2.Rows[j]["pName"].ToString() + " " + dt2.Rows[j]["qty"].ToString();
 
                     p1.Controls.Add(lb5);
                 }
@@ -152,6 +154,7 @@ namespace Restaurant_Management.View
                     guna2MessageDialog1.Show("Saved Successfully");
                 }
                 GetOrders();
+
             }
         }
     }
