@@ -55,6 +55,11 @@ namespace Restaurant_Management.Model
                 MainID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 this.Close();
             }
+
+            if(guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvPrint")
+            {
+                this.Close();
+            }
         }
     }
 }

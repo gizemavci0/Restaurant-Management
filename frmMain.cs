@@ -28,11 +28,11 @@ namespace Restaurant_Management
         
         public void AddControls(Form f)
         {
-            CenterPanel.Controls.Clear();
-            f.Dock = DockStyle.Fill; 
-            f.TopLevel = false;
-            CenterPanel.Controls.Add(f);
-            f.Show();
+            CenterPanel.Controls.Clear(); //yeni panel gelmeden once paneli temizleme islemi
+            f.Dock = DockStyle.Fill; //yeni gelen formun panele gore boyut olarak ayarlanmasını saglar
+            f.TopLevel = false; //bu islem formun panel ıcınde acılmasına ızın verdırır
+            CenterPanel.Controls.Add(f); //yenı form panele eklenır
+            f.Show(); //form gosterıme hazır
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -40,12 +40,15 @@ namespace Restaurant_Management
             Application.Exit();
         }
 
+
+        //form calıstıgında kullanıcı adını ekrana gırmeyı saglar.
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblUser.Text = MainClass.USER;
             _obj = this;
         }
 
+        //asağıdakı kısımda butonlara basıldıgında olabılecek ıhtımallerı ve acılacak formlar ayarlar
         private void btnHome_Click(object sender, EventArgs e)
         {
             AddControls(new frmHome());
@@ -55,11 +58,6 @@ namespace Restaurant_Management
         {
             frmPOS frm = new frmPOS();
             frm.Show();
-        }
-
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnKitchen_Click(object sender, EventArgs e)

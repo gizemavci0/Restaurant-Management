@@ -63,6 +63,16 @@ namespace Restaurant_Management.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap _2832794_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("2832794-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap _6826315_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("6826315-removebg-preview", resourceCulture);
@@ -107,6 +117,16 @@ namespace Restaurant_Management.Properties {
         internal static System.Drawing.Bitmap edited_List_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("edited_List-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap f38362431bfad09591290779772739b1_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("f38362431bfad09591290779772739b1-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -307,6 +327,16 @@ namespace Restaurant_Management.Properties {
         internal static System.Drawing.Bitmap indir__2__removebg_preview__1_ {
             get {
                 object obj = ResourceManager.GetObject("indir__2_-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap indir__2__removebg_preview__2_ {
+            get {
+                object obj = ResourceManager.GetObject("indir__2_-removebg-preview (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

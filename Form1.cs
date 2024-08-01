@@ -26,15 +26,18 @@ namespace Restaurant_Management
         {
             if(MainClass.IsValidUser(txtUser.Text, txtPass.Text) == false)
             {
+                //kullanıcı adı veya sıfre bılgısı yanlıs girilme durumunda hata mesajı doner
                 guna2MessageDialog1.Show("invalid username or password");
                 return;
             }
             else
             {
                 this.Hide(); // frmLogin ekranini gizler. <Başka işleme geçmek için>
-                frmMain frm = new frmMain(); //bir sonraki form olusturulu 
+                frmMain frm = new frmMain(); //bir sonraki form olan ana ekran formun nesnei olusturulu 
                 frm.Show(); // yeni form gosterildi
             }
         }
     }
 }
+
+//

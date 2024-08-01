@@ -21,16 +21,19 @@ namespace Restaurant_Management.View
 
         public void GetData()
         {
+            // arama kutusuna girilen metni kullanarak eslenen verileri secer
             string qry = "Select * From category where catName like '%"+txtSearch.Text +"%'";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvid);
             lb.Items.Add(dgvName);
 
+            // veritabanından alınan verileri yazdırmayı saglayan fonksıyon 
             MainClass.LoadData(qry, guna2DataGridView1, lb);
         }
 
         private void frmCategoryView_Load(object sender, EventArgs e)
         {
+            //yuklenme esnasında veriler alınır
             GetData();
         }
 
@@ -38,13 +41,16 @@ namespace Restaurant_Management.View
         {
             //frmCategoryAdd frm = new frmCategoryAdd();
             //frm.ShowDialog();
-            //arka planı blurlama 
+
+            //arka planı blurlar ve add formunu acar
             MainClass.BlurBackground(new frmCategoryAdd());
+            //ekleme sonraskı guncel halını yukler  
             GetData();
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
+            //arama kutusnu her yazma ıslemınde veri tekrar yuklenır
             GetData();
         }
 
@@ -69,7 +75,6 @@ namespace Restaurant_Management.View
                     Hashtable ht = new Hashtable();
                     MainClass.SQl(qry, ht);
 
-    
                     MessageBox.Show("Delete successfully..");
                     GetData();
                 }

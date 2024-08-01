@@ -99,6 +99,7 @@ namespace Restaurant_Management.Model
                 txtSearch.Text = "";
                 return;
             }
+          
             foreach (var item in ProductPanel.Controls)
             {
                 var pro = (ucProduct)item;
@@ -162,8 +163,9 @@ namespace Restaurant_Management.Model
         }
 
         //LoadProducts blogu
-            
-        /*using (SqlCommand cmd = new SqlCommand(qry, MainClass.con))
+
+        /*  string qry = "Select * from Product inner join category on catID = CategoryID";
+            using (SqlCommand cmd = new SqlCommand(qry, MainClass.con))
         {
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -186,8 +188,8 @@ namespace Restaurant_Management.Model
                 }
             }
         }*/
-                
-            
+
+
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
@@ -593,6 +595,7 @@ namespace Restaurant_Management.Model
                 cmd2.Parameters.AddWithValue("@qty", Convert.ToInt32(row.Cells["dgvQty"].Value));
                 cmd2.Parameters.AddWithValue("@price", Convert.ToDouble(row.Cells["dgvPrice"].Value));
                 cmd2.Parameters.AddWithValue("@amount", Convert.ToDouble(row.Cells["dgvAmount"].Value));
+                
 
                 if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
                 cmd2.ExecuteNonQuery();
@@ -613,3 +616,4 @@ namespace Restaurant_Management.Model
         }
     }
 }
+

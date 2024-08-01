@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBillList));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +41,8 @@
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvtable = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,7 +51,7 @@
             this.dgvStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvPrint = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -187,7 +190,7 @@
             this.dgvStatus,
             this.dgvTotal,
             this.dgvedit,
-            this.dgvdel});
+            this.dgvPrint});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -228,6 +231,28 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
             this.guna2DataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.guna2DataGridView1_CellFormatting);
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewImageColumn1.FillWeight = 50F;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::Restaurant_Management.Properties.Resources.images__3__removebg_preview__1_;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.MinimumWidth = 50;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 50;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewImageColumn2.FillWeight = 50F;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::Restaurant_Management.Properties.Resources._2832794_removebg_preview;
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.MinimumWidth = 50;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Width = 50;
             // 
             // dgvSno
             // 
@@ -294,18 +319,17 @@
             this.dgvedit.ReadOnly = true;
             this.dgvedit.Width = 50;
             // 
-            // dgvdel
+            // dgvPrint
             // 
-            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvdel.FillWeight = 50F;
-            this.dgvdel.HeaderText = "";
-            this.dgvdel.Image = global::Restaurant_Management.Properties.Resources.recycling_bin_icon_psd_45713_removebg_preview1;
-            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvdel.MinimumWidth = 50;
-            this.dgvdel.Name = "dgvdel";
-            this.dgvdel.ReadOnly = true;
-            this.dgvdel.Visible = false;
-            this.dgvdel.Width = 50;
+            this.dgvPrint.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvPrint.FillWeight = 50F;
+            this.dgvPrint.HeaderText = "";
+            this.dgvPrint.Image = ((System.Drawing.Image)(resources.GetObject("dgvPrint.Image")));
+            this.dgvPrint.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvPrint.MinimumWidth = 50;
+            this.dgvPrint.Name = "dgvPrint";
+            this.dgvPrint.ReadOnly = true;
+            this.dgvPrint.Width = 50;
             // 
             // frmBillList
             // 
@@ -340,6 +364,8 @@
         private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSno;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvid;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvtable;
@@ -348,6 +374,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvTotal;
         private System.Windows.Forms.DataGridViewImageColumn dgvedit;
-        private System.Windows.Forms.DataGridViewImageColumn dgvdel;
+        private System.Windows.Forms.DataGridViewImageColumn dgvPrint;
     }
 }
