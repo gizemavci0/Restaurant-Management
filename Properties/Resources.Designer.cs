@@ -114,9 +114,29 @@ namespace Restaurant_Management.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap edited_gdhd_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("edited_gdhd-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap edited_List_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("edited_List-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap edited_rhdhdbhd_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("edited_rhdhdbhd-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -284,6 +304,16 @@ namespace Restaurant_Management.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap images_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("images-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap indir__1__removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("indir__1_-removebg-preview", resourceCulture);
@@ -418,6 +448,16 @@ namespace Restaurant_Management.Properties {
         internal static System.Drawing.Bitmap recycling_bin_icon_psd_45713_removebg_preview1 {
             get {
                 object obj = ResourceManager.GetObject("recycling-bin-icon-psd-45713-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap rhdhdbhd_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("rhdhdbhd-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

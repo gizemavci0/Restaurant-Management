@@ -154,6 +154,18 @@
     <Compile Include="Model\frmCheckout.Designer.cs">
       <DependentUpon>frmCheckout.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\frmDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmDocument.Designer.cs">
+      <DependentUpon>frmDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmDocumentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmDocumentList.Designer.cs">
+      <DependentUpon>frmDocumentList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\frmPOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +216,12 @@
     <Compile Include="View\frmCategoryView.Designer.cs">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmDocumentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDocumentView.Designer.cs">
+      <DependentUpon>frmDocumentView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmKitchenView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +267,12 @@
     <EmbeddedResource Include="Model\frmCheckout.resx">
       <DependentUpon>frmCheckout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmDocument.resx">
+      <DependentUpon>frmDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmDocumentList.resx">
+      <DependentUpon>frmDocumentList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\frmPOS.resx">
       <DependentUpon>frmPOS.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmCategoryView.resx">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmDocumentView.resx">
+      <DependentUpon>frmDocumentView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmKitchenView.resx">
       <DependentUpon>frmKitchenView.cs</DependentUpon>
@@ -426,6 +453,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\f38362431bfad09591290779772739b1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edited_gdhd-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rhdhdbhd-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edited_rhdhdbhd-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images-removebg-preview %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

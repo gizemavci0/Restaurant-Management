@@ -84,5 +84,10 @@ namespace Restaurant_Management
         {
             AddControls(new frmCategoryView());
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmDocumentView());
+        }
     }
 }
